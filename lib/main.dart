@@ -1,4 +1,6 @@
 import 'package:QuizApp/screens/LoginScreen.dart';
+import 'package:QuizApp/screens/OfflineMenuScreen.dart';
+import 'package:QuizApp/screens/QuizScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:QuizApp/screens/RegisterScreen.dart';
 
@@ -17,13 +19,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
       theme: ThemeData(
         accentColor: brown,
         primaryColor: yellow,
         primarySwatch: Colors.blue,
       ),
-      home: RegisterScreen(),
+      home: QuizScreen(),
     );
   }
 }
